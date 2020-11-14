@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="top-panel">
+        <div class="wrap">
+            <div id="prevbutton" class="top-panel_prev-btn">
+                <img src="img/icons/chevron-left.svg" alt="назад" class="prev-btn_ocon">
+            </div>
+            <h1 class="top-panel_title title title__white">Заявки</h1>
+        </div>
+    </div>
+    <div class="bottom-panel">
+        <nav class="menu">
+            <div class="menu_item" id="profile">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM19.3995 17.1246C20.4086 15.6703 21 13.9042 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.9042 3.59138 15.6703 4.6005 17.1246C5.72595 15.6381 8.3706 15 12 15C15.6294 15 18.274 15.6381 19.3995 17.1246ZM17.9647 18.7398C17.672 17.6874 15.5694 17 12 17C8.43062 17 6.328 17.6874 6.03532 18.7398C7.6233 20.1462 9.71194 21 12 21C14.2881 21 16.3767 20.1462 17.9647 18.7398ZM12 15C9.76086 15 8 13.4274 8 10C8 7.75576 9.5791 6 12 6C14.4142 6 16 7.92158 16 10.2C16 13.4796 14.2181 15 12 15ZM10 10C10 12.2693 10.8182 13 12 13C13.1777 13 14 12.2984 14 10.2C14 8.95042 13.2157 8 12 8C10.7337 8 10 8.81582 10 10Z"
+                        fill="#274F7D" />
+                </svg>
+                <br>
+                <span class="menu_item-title">Профиль</span>
+            </div>
+
+            <div class="menu_item active" id="new-claim">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.99592 2C9.7482 1.36297 10.8391 1 12 1C13.1609 1 14.2518 1.36297 15.0041 2H16C17.1046 2 18 2.89543 18 4H19C20.1046 4 21 4.89543 21 6V21C21 22.1046 20.1046 23 19 23H5C3.89543 23 3 22.1046 3 21V6C3 4.89543 3.89543 4 5 4H6C6 2.89543 6.89543 2 8 2H8.99592ZM16 7C16.7403 7 17.3866 6.5978 17.7324 6H19V21H5V6H6.26756C6.61337 6.5978 7.25972 7 8 7H16ZM11 10V13H8V15H11V18H13V15H16V13H13V10H11ZM9.85762 4L10.1566 3.65538C10.4852 3.27674 11.1894 3 12 3C12.8106 3 13.5148 3.27674 13.8434 3.65538L14.1424 4H16V5H8V4H9.40135H9.85762Z"
+                        fill="#274F7D" />
+                </svg>
+                <br>
+                <span class="menu_item-title">Новая заявка</span>
+            </div>
+
+            <div class="menu_item" id="claims">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.99592 2C9.7482 1.36297 10.8391 1 12 1C13.1609 1 14.2518 1.36297 15.0041 2H16C17.1046 2 18 2.89543 18 4H19C20.1046 4 21 4.89543 21 6V21C21 22.1046 20.1046 23 19 23H5C3.89543 23 3 22.1046 3 21V6C3 4.89543 3.89543 4 5 4H6C6 2.89543 6.89543 2 8 2H8.99592ZM16 7C16.7403 7 17.3866 6.5978 17.7324 6H19V21H5V6H6.26756C6.61337 6.5978 7.25972 7 8 7H16ZM8 16V14H14V16H8ZM8 10V12H16V10H8ZM9.85762 4L10.1566 3.65538C10.4852 3.27674 11.1894 3 12 3C12.8106 3 13.5148 3.27674 13.8434 3.65538L14.1424 4H16V5H8V4H9.40135H9.85762Z"
+                        fill="#274F7D" />
+                </svg>
+                <br>
+                <span class="menu_item-title">Заявки</span>
+            </div>
+        </nav>
+    </div>
+    <form id="data" class="screen" ethod="POST">
+        <div class="data_photo">
+            <input type="file" accept="image/*,capture=camera" id="imgInp" multiple>
+            <label for="imgInp"><span class="verticalLine"></span>Добавить</label>
+            <div class="data_photo_container">
+
+            </div>
+
+
+            <div class="submit next false">Дальше</div>
+        </div>
+
+        <div class="data_accident">
+            <div class="input">
+                <p class="input_p--header">Тип нарушения</p>
+                <select class="select_input--1  data_input--1 required">
+                    <option hidden="">Выберите тип</option>
+                    <option>загораживает проезд</option>
+                    <option>Стоит хорошо</option>
+                    <option>Уступи место</option>
+                </select>
+            </div>
+            <div class="input">
+                <p class="input_p--header">Описание</p>
+                <textarea class="data_input--1 data_textarea--1" id="descr"></textarea>
+            </div>
+            <div class="input">
+                <p class="input_p--header">Номер автомобиля</p>
+                <input type="text" name="autoN" id="autoN" class="data_input--1">
+            </div>
+
+
+
+
+            <div class="submit next false">Дальше</div>
+
+        </div>
+        <div class="data_geo screen-hide">
+            <p class="input_p--small">Выберите место на карте!</p>
+            <div id="map"></div>
+            <div class="data_geo_input input">
+                <div class="data_geo_checkbox " id="placeMe">
+
+                </div>
+                <div class="data_geo_checkbox_text">Моё местоположение</div>
+
+            </div>
+
+            <div id="submit" class="submit next  false">Отправить</div>
+
+
+        </div>
+        
+        
+
+
+
+    </form>
+    <div class="screen" id="claim">
+        <h1 class="title "> Ваша заявка отправлена </h1>
+        <div class="submit true " id="goToClaims">Перейти к заявкам</div>
+    </div>
+
+    <main class="first-screen screen screen-hide data-main">
+        <div class="first-screen_content">
+            <div class="ill">
+                <img src="img/main/ill.svg" alt="картинка жезла" class="ill-img">
+            </div>
+            <p class="description">
+                Обаружили нарушение ПДД?
+                Отправьте заявку!
+            </p>
+            <button class="btn-add btn-add--main" id="add-claim">
+                <img src="img/icons/icon-add.svg" alt="" class="btn-add_img">
+                <span class="btn-add_title">Добавить заявку</span>
+            </button>
+        </div>
+    </main>
+
+    <div class="claims-screen screen screen-hide">
+        <div class="container">
+            <div class="new-claim">
+                <button class="btn-add btn-add--square">
+                    <img src="img/icons/icon-add.svg" alt="" class="btn-add_img">
+                </button>
+                <p class="claim-title">Добавить новую заявку</p>
+            </div>
+            <ul class="claims-list">
+                <li class="claims-list_item">
+                    <p class="claim-list-item_date claim-title">От 8 ноября 2020 г., 18:05</p>
+                    <button class="btn-add btn-add--square">
+                        <img src="img/icons/pencil-edit.svg" alt="модерация" class="btn-add_img">
+                    </button>
+                </li>
+                <li class="claims-list_item">
+                    <p class="claim-list-item_date claim-title">От 6 ноября 2020 г., 18:05</p>
+                    <button class="btn-add disabled">
+                        <img src="img/icons/pencil-edit.svg" alt="модерация" class="btn-add_img">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile-screen screen screen-hide">profile</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvmQ8dWwPvcr7Gtr_KNsgTvI2Pecs_g1M&libraries=places&callback=initMap"
+        async defer></script>
+
+</body>
+
+</html>
